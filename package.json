@@ -1,3 +1,4 @@
+
 {
   "name": "studium",
   "private": true,
@@ -5,9 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
-    "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0",
-    "typecheck": "tsc --noEmit"
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 0.0.0.0"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
@@ -18,8 +18,5 @@
     "lucide-react": "latest",
     "recharts": "latest"
   },
-  "devDependencies": {
-    "@types/react": "latest",
-    "@types/react-dom": "latest"
-  }
+  "devDependencies": {}
 }
